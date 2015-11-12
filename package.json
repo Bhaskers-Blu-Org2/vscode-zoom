@@ -1,0 +1,41 @@
+{
+	"name": "vscodeZoom",
+	"description": "Persistent Zoom",
+	"version": "0.0.1",
+	"publisher": "chrisdias",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"categories": [
+		"Others"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Persistent Zoom Options",
+			"properties": {
+				"vscodeZoom.enable": {
+					"type": "boolean",
+					"default": false,
+					"description": "Controls whether or not the Persistent Zoom extension is enabled."
+				},
+				"vscodeZoom.level": {
+					"type": "number",
+					"default": "0",
+					"description": "Zoom level, 0 (None) to 5 (XXL)."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}
