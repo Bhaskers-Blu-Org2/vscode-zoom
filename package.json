@@ -1,14 +1,16 @@
 {
 	"name": "vscodeZoom",
-	"description": "Persistent Zoom",
+	"description": "Set a Zoom level and have it automatically restored when you restart VS Code",
+	"displayName": "Persistent Zoom",
 	"version": "0.0.1",
+	"galleryBanner": {
+		"color": "#37699A",
+		"theme": "dark"
+	},
 	"publisher": "chrisdias",
 	"engines": {
 		"vscode": "0.10.x"
 	},
-	"categories": [
-		"Others"
-	],
 	"icon": "Zoom_icon.svg",
 	"activationEvents": [
 		"*"
