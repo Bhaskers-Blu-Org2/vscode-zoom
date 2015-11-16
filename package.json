@@ -21,14 +21,9 @@
 			"type": "object",
 			"title": "Persistent Zoom Options",
 			"properties": {
-				"vscodeZoom.enable": {
-					"type": "boolean",
-					"default": false,
-					"description": "Controls whether or not the Persistent Zoom extension is enabled."
-				},
 				"vscodeZoom.level": {
 					"type": "number",
-					"default": "0",
+					"default": 0,
 					"description": "Zoom level, 0 (None) to 5 (XXL)."
 				}
 			}

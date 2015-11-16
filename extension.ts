@@ -9,13 +9,17 @@ export function activate(context: vscode.ExtensionContext) {
 	let config: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration("vscodeZoom");
 
 	if (config) {
-		if (config.get("enable", false)) {
-			let lvl = config.get("level", 0);
-			if (lvl > 10) lvl = 10;
-			if (lvl < 0) lvl = 0;
-			for (let i = 0; i < lvl; i++) {
-				vscode.commands.executeCommand("workbench.action.zoomIn");
-			}
+		
+		let lvl = config.get("level", 0);
+		
+		if (lvl > 5) {
+			lvl = 5;
+		} else if (lvl < 0) {
+			lvl = 0;
+		} 
+		
+		for (let i = 0; i < lvl; i++) {
+			vscode.commands.executeCommand("workbench.action.zoomIn");
 		}
 	}
 }
