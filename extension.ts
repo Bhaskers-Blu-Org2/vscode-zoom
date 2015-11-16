@@ -11,6 +11,8 @@ export function activate(context: vscode.ExtensionContext) {
 	if (config) {
 		if (config.get("enable", false)) {
 			let lvl = config.get("level", 0);
+			if (lvl > 10) lvl = 10;
+			if (lvl < 0) lvl = 0;
 			for (let i = 0; i < lvl; i++) {
 				vscode.commands.executeCommand("workbench.action.zoomIn");
 			}
