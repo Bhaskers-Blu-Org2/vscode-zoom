@@ -11,6 +11,7 @@
 	"engines": {
 		"vscode": "0.10.x"
 	},
+	"categories": ["Other"],
 	"icon": "Zoom_icon.svg",
 	"activationEvents": [
 		"*"
