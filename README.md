@@ -1,6 +1,6 @@
 # Persistent Zoom for Visual Studio Code
 
-> With Visual Studio Code v0.10.6 this extension is deprecated in favor of the built in [persisted zoom level setting](https://code.visualstudio.com/Updates#_persisted-zoom-level). 
+> **IMPORTANT!** With Visual Studio Code v0.10.6 this extension is deprecated in favor of the built in [persisted zoom level setting](https://code.visualstudio.com/Updates#_persisted-zoom-level). 
 
 >Simply replace `vscodeZoom.level` with `window.zoomLevel`!
 
